@@ -175,14 +175,14 @@
         <div class="form__order">
           <h3>Остались вопросы? Задайте их нам!</h3>
           <p class="form__description">Мы проконсультируем Вас бесплатно</p>
-          <form class="form__container" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="form__container js-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="form__input-wrapper">
               <label class="visually-hidden" for="name">Заполните имя</label>
-              <input type="text" name="name" placeholder="Имя" id="name" required>
+              <input class="js-input" type="text" name="name" placeholder="Имя" id="name" required>
             </div>
             <div class="form__input-wrapper">
               <label class="visually-hidden" for="tel">Заполните номер телефона</label>
-              <input type="tel" name="tel" placeholder="Телефон" id="tel" required data-mask="phone">
+              <input class="js-input" type="tel" name="tel" placeholder="Телефон" id="tel"  data-mask="phone" required>
             </div>
             <div class="form__text-area">
               <label class="visually-hidden" for="question">Задайте вопрос</label>
@@ -191,7 +191,7 @@
             <button type="submit">Задать вопрос</button>
             <div class="form__checkbox checkbox">
               <label>
-                <input class="visually-hidden" type="checkbox" required>
+                <input class="js-input" type="checkbox" name="checkbox" required>
                 <span class="form__befor"></span>
                 Я согласен на обработку персональных данных
               </label>
@@ -319,7 +319,7 @@
       <div class="modal__content">
         <h2 class="modal__title">Закажите звонок</h2>
         <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form class="modal__container form form--modal" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="modal__container form form--modal js-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="form__input-wrapper">
             <label class="visually-hidden" for="input-modal-name">Заполните имя</label>
             <input type="text" name="name" placeholder="Имя" id="input-modal-name" required>
@@ -335,7 +335,7 @@
           <button type="submit">Отправить</button>
           <div class="form__checkbox checkbox">
             <label>
-              <input class="visually-hidden" type="checkbox" required>
+              <input type="checkbox" required name="username">
               <span class="form__befor"></span>
               Я согласен на обработку персональных данных
             </label>

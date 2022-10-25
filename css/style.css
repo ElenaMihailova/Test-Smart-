@@ -569,7 +569,6 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
-  /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 }
 
@@ -1809,6 +1808,34 @@ body {
 .form textarea {
   padding-top: 24px;
   color: #ffffff;
+}
+
+.error input {
+  border: 2px solid red;
+}
+
+.error .form__befor {
+  border: 2px solid red;
+}
+
+.error input::-webkit-input-placeholder {
+  color: red;
+}
+
+.error input::-moz-placeholder {
+  color: red;
+}
+
+.error input:-ms-input-placeholder {
+  color: red;
+}
+
+.error input::-ms-input-placeholder {
+  color: red;
+}
+
+.error input::placeholder {
+  color: red;
 }
 
 .checkbox {
