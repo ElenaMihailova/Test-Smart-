@@ -569,6 +569,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
+  /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 }
 
@@ -1811,31 +1812,31 @@ body {
 }
 
 .error input {
-  border: 2px solid red;
+  border: 2px solid #ffffff;
 }
 
 .error .form__befor {
-  border: 2px solid red;
+  border: 2px solid #ffffff;
 }
 
 .error input::-webkit-input-placeholder {
-  color: red;
+  color: #ffffff;
 }
 
 .error input::-moz-placeholder {
-  color: red;
+  color: #ffffff;
 }
 
 .error input:-ms-input-placeholder {
-  color: red;
+  color: #ffffff;
 }
 
 .error input::-ms-input-placeholder {
-  color: red;
+  color: #ffffff;
 }
 
 .error input::placeholder {
-  color: red;
+  color: #ffffff;
 }
 
 .checkbox {
@@ -1904,6 +1905,20 @@ body {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+}
+
+.pristine-error {
+  border: none;
+  color: #ff0000;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.pristine-error.pristine-error {
+  border: none;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
